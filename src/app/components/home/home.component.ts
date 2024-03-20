@@ -15,5 +15,8 @@ export class HomeComponent {
   c1='red'
   c2='green'
 
+  //class binding
+  col:boolean=true
+
 
 }
