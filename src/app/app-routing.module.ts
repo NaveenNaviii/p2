@@ -7,7 +7,10 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'login',component:LoginComponent},
-  {path:'**',component:PageNotFoundComponent}// wildcard routing
+  {path:'feature',loadChildren:()=>import('./feature-module/feature-module.module')
+    .then(x=>x.FeatureModuleModule)},
+  {path:'**',component:PageNotFoundComponent},// wildcard routing
+
 ];
 
 @NgModule({
