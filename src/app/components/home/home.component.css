@@ -5,3 +5,8 @@
 .c2{
     color: blue;
 }
+
+tr,th{
+    border: solid black;
+}
+

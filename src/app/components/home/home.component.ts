@@ -7,16 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  //Property biinding
-  val='Navi Bhai'
-
-  //style binding
-  color:boolean=false
-  c1='red'
-  c2='green'
-
-  //class binding
-  col:boolean=true
+  
 
 
 }
