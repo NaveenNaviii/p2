@@ -1,0 +1,19 @@
+
+<div class="margin">
+    <button (click)="addCircle()">Add circle</button>&nbsp;=&nbsp;
+    <span>{{circleCount}}</span>
+    <br>
+    <br>
+    <span>Grey Circle count = {{greyCircleCount}}</span>
+    <br>
+    <br>
+    <div class="circle-container">
+      <div
+        class="circle"
+        *ngFor="let circle of circles"
+        [style.top.px]="circle.y"
+        [class.grey]="circle.isGrey"
+        (click)="toggleCircleColor(circle)"
+      ></div>
+    </div>
+</div>

@@ -8,14 +8,16 @@ import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import {HttpClientModule} from "@angular/common/http"
+import {HttpClientModule} from "@angular/common/http";
+import { InterviewComponent } from './components/interview/interview.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    InterviewComponent
   ],
   imports: [
     BrowserModule,
